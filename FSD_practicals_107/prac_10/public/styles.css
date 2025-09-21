@@ -1,0 +1,146 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  background: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e9ecef;
+}
+
+.container h1 {
+  text-align: center;
+  color: #2c5282;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ===== Log List ===== */
+.log-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.log-list li {
+  display: flex;
+}
+
+.log-list a {
+  text-decoration: none;
+  background: #2c5282;
+  color: white;
+  padding: 16px 20px;
+  border-radius: 6px;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.2s;
+  border: 1px solid #2c5282;
+}
+
+.log-list a:hover {
+  background: #2a4a75;
+}
+
+/* ===== Logs Content ===== */
+.logs {
+  background: #f8f9fa;
+  color: #333;
+  padding: 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 6px;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 0.9rem;
+  margin-top: 20px;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+/* ===== Buttons under log view ===== */
+.buttons {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background: #28a745;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+  font-weight: 500;
+  border: 1px solid #28a745;
+}
+
+.btn:hover {
+  background: #218838;
+}
+
+.btn.danger {
+  background: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn.danger:hover {
+  background: #c82333;
+}
+
+.btn.back {
+  background: #6c757d;
+  border-color: #6c757d;
+}
+
+.btn.back:hover {
+  background: #5a6268;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .container h1 {
+    font-size: 1.5rem;
+  }
+  
+  .log-list {
+    grid-template-columns: 1fr;
+  }
+  
+  .buttons {
+    flex-direction: column;
+  }
+  
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}

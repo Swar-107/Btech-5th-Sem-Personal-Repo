@@ -1,0 +1,116 @@
+/* Entire Page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f8f9fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Main App Container */
+.app-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #333;
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Counter Section */
+.counter-section {
+    margin-bottom: 30px;
+}
+
+.count-display {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Counter Buttons */
+.counter-btn {
+    padding: 8px 15px;
+    font-size: 14px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+}
+
+.counter-btn:hover {
+    background-color: #e0e0e0;
+}
+
+/* Name Section */
+.name-section {
+    border-top: 1px solid #ddd;
+    padding-top: 30px;
+}
+
+.welcome-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Input Section */
+.input-section {
+    margin-bottom: 30px;
+}
+
+.input-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+    gap: 10px;
+}
+
+.input-row label {
+    font-weight: 500;
+    color: #333;
+    font-size: 16px;
+    min-width: 100px;
+    text-align: right;
+}
+
+.input-row input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    width: 200px;
+}
+
+.input-row input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* Output Section */
+.output-section {
+    text-align: center;
+}
+
+.output-section p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}

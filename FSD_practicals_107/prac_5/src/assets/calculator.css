@@ -1,0 +1,166 @@
+/* General container */
+.calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* Calculator box */
+.calculator {
+    background: #2c3e50;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    width: 350px;
+    border: 1px solid #34495e;
+}
+
+/* Display section */
+.display-section {
+    background: #1a252f;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    min-height: 80px;
+    border: 1px solid #34495e;
+}
+
+.equation {
+    color: #7f8c8d;
+    font-size: 16px;
+    text-align: right;
+    min-height: 20px;
+    margin-bottom: 10px;
+}
+
+.display {
+    color: #ecf0f1;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: right;
+    word-wrap: break-word;
+    min-height: 40px;
+}
+
+/* Button grid */
+.button-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+.operation-row {
+    margin-bottom: 8px;
+}
+
+.operation-row button {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Number grid specific styling */
+.row:not(.operation-row) {
+    justify-content: center;
+}
+
+.row:not(.operation-row) button {
+    width: 80px;
+    flex: none;
+}
+
+/* Button base styles */
+button {
+    flex: 1;
+    height: 60px;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid transparent;
+    min-width: 50px;
+}
+
+button:hover {
+    transform: translateY(-1px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Number buttons */
+.num-btn {
+    background: #34495e;
+    color: #ecf0f1;
+    border-color: #4a6741;
+}
+
+.num-btn:hover {
+    background: #4a6741;
+}
+
+/* Operation buttons */
+.op-btn {
+    background: #c0392b;
+    color: white;
+    font-size: 20px;
+}
+
+.op-btn:hover {
+    background: #e74c3c;
+}
+
+/* Delete button */
+.del-btn {
+    background: #c0392b;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.del-btn:hover {
+    background: #e74c3c;
+}
+
+/* Equals button */
+.equals-btn {
+    background: #27ae60;
+    color: white;
+    font-size: 22px;
+}
+
+.equals-btn:hover {
+    background: #2ecc71;
+}
+
+/* Responsive design */
+@media (max-width: 400px) {
+    .calculator {
+        width: 320px;
+        padding: 20px;
+    }
+    
+    button {
+        height: 50px;
+        font-size: 16px;
+    }
+    
+    .row:not(.operation-row) button {
+        width: 70px;
+    }
+    
+    .display {
+        font-size: 28px;
+    }
+}

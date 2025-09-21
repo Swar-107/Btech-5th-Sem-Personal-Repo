@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Library Portal - Your Profile</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="welcome-message">Welcome, <%= user.name %>!</h1>
+    <div class="profile-info">
+      <p><strong>Session Information:</strong></p>
+      <p>User Name: <strong><%= user.name %></strong></p>
+      <p>Login Time: <strong><%= user.loginTime %></strong></p>
+      <p>Session Status: <strong>Active</strong></p>
+    </div>
+    <a href="/logout" class="btn logout">Sign Out</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Income Calculation Results</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Income Calculation Results</h1>
+    <div class="result-section">
+      <p>Income from Source 1: <strong>Rs.<%= income1.toLocaleString() %></strong></p>
+      <p>Income from Source 2: <strong>Rs.<%= income2.toLocaleString() %></strong></p>
+      <hr>
+      <h2>Total Taxable Income: Rs.<%= totalIncome.toLocaleString() %></h2>
+    </div>
+    <a href="/" class="btn">Calculate Again</a>
+  </div>
+</body>
+</html>

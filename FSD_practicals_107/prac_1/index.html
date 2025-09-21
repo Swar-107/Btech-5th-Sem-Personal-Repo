@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        let votes = {
+            A: 0,
+            B: 0,
+            C: 0
+        }
+        function but(choice){
+            votes[choice]++;
+
+            document.getElementById('js-votes').textContent = votes.A;
+            document.getElementById('html-votes').textContent = votes.B;
+            document.getElementById('react-votes').textContent = votes.C;
+        }
+
+    </script>
+    <title>Practical 1</title>
+</head>
+<body>
+    <center>
+    <div class="maindiv">
+        <h1>Voting System</h1>
+        <input type="button" value="JavaScript" onclick="but('A')" id="but1">
+        <input type="button" value="Html" onclick="but('B')" id="but1">
+        <input type="button" value="React" onclick="but('C')" id="but1">
+
+        <h2 class="h2">Results</h2>
+        <div class="innerdiv">
+            <p class="lan">Java Script: <span id = 'js-votes'>0</span></p>
+            <p class="lan">Html: <span id = 'html-votes'>0</span></p>
+            <p class="lan">React: <span id = 'react-votes'>0</span></p>
+        </div>
+    </div>
+    </center>
+</body>
+</html>

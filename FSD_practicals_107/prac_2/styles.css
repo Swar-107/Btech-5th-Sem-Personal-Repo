@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #ff8a50, #ff6b35);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    max-width: 400px;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+  }
+  
+  #city-input {
+    padding: 12px 15px;
+    width: 220px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    margin-right: 15px;
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+  }
+  
+  #city-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  #city-input:focus {
+    outline: none;
+    border-color: #fff;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  #search-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff4500;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #search-btn:hover {
+    background: #e03e00;
+  }
+  
+  .weather-card {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+  }
+  
+  #weather-icon {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  
+  #city-name {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+  }
+  
+  #temperature {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  #weather-description {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: rgba(255, 255, 255, 0.9);
+    text-transform: capitalize;
+  }
+  
+  #humidity, #wind-speed {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: rgba(255, 255, 255, 0.8);
+  }
